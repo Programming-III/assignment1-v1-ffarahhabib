@@ -1,15 +1,18 @@
-#ifndef ENCLOSURE_H
-#define ENCLOSURE_H
 
+#ifndef UNTITLED3_ENCLOSURE_H
+#define UNTITLED3_ENCLOSURE_H
 #include "Animal.h"
 
-//define enclosure class here 
-
-
-
-
-
-
-
-
-#endif
+class Enclosure {
+private:
+  int capacity;
+  int currentCount;
+  Animal *a;
+  public:
+  Enclosure();
+  Enclosure(int capacity, int currentCount);
+  void addAnimal(Animal *a);
+  void displayAnimals();
+  ~Enclosure();
+};
+#endif //UNTITLED3_ENCLOSURE_H
