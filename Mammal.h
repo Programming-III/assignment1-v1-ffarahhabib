@@ -1,13 +1,14 @@
-#ifndef MAMMAL_H
-#define MAMMAL_H
 
-#include "Animal.h"
+#ifndef UNTITLED3_MAMMAL_H
+#define UNTITLED3_MAMMAL_H
+#include <string>
 
-//define mammal class here
-
-
-
-
-
-
-#endif
+class Mammmal:public Animal {
+    private:
+    string furColor;
+public:
+    Mammmal();
+    Mammmal(string furColor);
+    ~Mammmal();
+};
+#endif //UNTITLED3_MAMMAL_H
