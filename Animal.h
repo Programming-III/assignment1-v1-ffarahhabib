@@ -1,11 +1,24 @@
-#ifndef ANIMAL_H
-#define ANIMAL_H
 
+#ifndef UNTITLED3_ANIMAL_H
+#define UNTITLED3_ANIMAL_H
 #include <string>
-using namespace std;
 
-//define animal class here 
-
-
-
-#endif
+class Animal {
+private:
+    string name;
+    int age;
+    bool isHungry;
+public:
+     Animal();
+    Animal(string n, int a, bool isHungry );
+    void display();
+    void feed();
+    void setAge(int a);
+    void setHungry();
+    void setName();
+    string getName();
+    int getAge();
+    int getHungry();
+    ~Animal();
+};
+#endif //UNTITLED3_ANIMAL_H
